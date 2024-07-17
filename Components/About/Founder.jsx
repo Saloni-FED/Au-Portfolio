@@ -22,7 +22,7 @@ const Founder = () => {
         </div>
       </div>
       <div className="lg:flex lg:justify-center  lg:pl-[28rem] lg:-mt-24 lg:-ml-56">
-        <p className="lg:w-[45%] font-sora md:text-right text-left text-[20px] max-sc:mt-2">
+        <p className="lg:w-[45%] font-sora md:text-right text-left text-[20px] max-sc:mt-2 max-sc:text-[15px]">
           15+ years of working experience in makeup industry & trainer.
           Expertise in bridal makeup, hairstyling & draping. I have done
           250+Bridal Makeup & 1000+Party Makeup.
@@ -36,7 +36,7 @@ const Founder = () => {
             <div className="absolute right-0 top-full mt-3 w-[30%] h-[2px] bg-white "></div>
           </div>
         </div>
-        <div className="mt-12  text-left font-sora md:text-left md:w-[80%] text-[20px] lg:pl-32 max-sc:mt-16">
+        <div className="mt-12  text-left font-sora md:text-left md:w-[80%] text-[20px] lg:pl-32 max-sc:mt-16 max-sc:text-[15px]">
           <p>
             Sarika's vision for Aistear Unica was born out of a desire to
             revolutionize the traditional makeup service industry. With vast

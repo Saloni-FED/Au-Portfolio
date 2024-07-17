@@ -2,6 +2,7 @@ import React from "react";
 import About from "@/Components/About/About";
 import Stats from "@/Components/About/Stats";
 import Founder from "@/Components/About/Founder";
+import Mission from "@/Components/About/Mission";
 // import FounderProfile from "@/Components/About/FounderProfile";
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
         <About/>
         <Stats/>
         <Founder/>
+        <Mission/>
       </div>
     </div>
   );
