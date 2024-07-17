@@ -23,7 +23,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className=" text-black py-6 px-10 rounded-2xl shadow-md w-full max-w-lg border-2">
+      <div className=" text-black py-6 px-10 rounded-2xl shadow-md w-full max-w-[600px] border-2">
         <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="flex flex-col">
             <label htmlFor="firstName" className="mb-1 text-white">
