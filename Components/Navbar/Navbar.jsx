@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="gap-10 items-center pr-2 justify-between  hidden sc:flex">
           {/* Responsive navigation links */}
           <div className="hidden max-w-2xl sm:flex space-x-4 text-sm">
-            <Link href="#about-us">About us</Link>
+            <Link href="/about">About us</Link>
             <Link href="#for-users">for User's</Link>
             <Link href="#for-artists">for Artist's</Link>
             <Link href="#knowledge-centre">Knowledge centre</Link>
