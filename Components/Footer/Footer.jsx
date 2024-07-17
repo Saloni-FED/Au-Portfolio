@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8 font-sora w-full">
-      <div className="container  px-4 md:flex md:justify-between 2xl:w-[80%] md:w-[80%]  mx-auto gap-2">
+    <footer className="bg-black text-white py-8 font-sora w-full ">
+      <div className="container  px-4 md:flex md:justify-between 2xl:w-[80%] md:w-[80%]  mx-auto gap-2 lg:pl-10">
         <div className="md:w-1/3 mb-8 md:mb-0 2xl:pl-10 pl-1">
           <img src="/images/LOGO (1).png" alt="Logo" className="w-56 mb-4 -mt-4" />
           <p className="w-[60%]">
