@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
           <div className="absolute w-[30%] h-[2px] bg-white mt-1 md:pl-10"></div>
         </div>
       </div>
-      <div className="md:text-center mt-5 font-sora lg:w-[70%] mx-auto">
+      <div className="md:text-center mt-5 font-sora lg:w-[70%] mx-auto max-sm:px-2">
         {/*  */}
         <p>
           Join the Aistear Unica family and discover a beauty service that
