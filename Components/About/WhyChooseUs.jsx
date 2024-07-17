@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
       <div className="flex justify-center">
         <div className="relative inline-block 2xl:pl-20">
           <h2 className="text-3xl sm:text-4xl font-sora font-semibold">
-            Why Chhose Us ?
+            Why Choose Us ?
           </h2>
           <div className="absolute w-[30%] h-[2px] bg-white mt-1 md:pl-10"></div>
         </div>
