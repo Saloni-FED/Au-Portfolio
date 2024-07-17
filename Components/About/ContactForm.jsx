@@ -38,7 +38,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="lastName" className="mb-1">
+            <label htmlFor="lastName" className="mb-1 text-white">
               Last Name
             </label>
             <input
@@ -50,7 +50,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="number" className="mb-1">
+            <label htmlFor="number" className="mb-1 text-white">
               Number
             </label>
             <input
@@ -62,7 +62,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" className="mb-1">
+            <label htmlFor="email" className="mb-1 text-white">
               Email address
             </label>
             <input
@@ -74,7 +74,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col col-span-1 sm:col-span-2">
-            <label htmlFor="note" className="mb-1">
+            <label htmlFor="note" className="mb-1 text-white">
               Note
             </label>
             <textarea
