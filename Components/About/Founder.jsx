@@ -14,7 +14,7 @@ const Founder = () => {
       </div>
       <div className="flex  items-center sm:flex-row sm:pl-28 gap-20 sm:space-x-12 w-full md:-mr-10">
         <div className="mb-8 sm:mb-0  flex flex-wrap  lg:gap-4 gap-2relative">
-          <img src="/images/image 1.png" alt="Founder" className="w-56 2xl:w-96 xl:w-[21rem]" />
+          <img src="/images/image 1.png" alt="Founder" className="w-56 2xl:w-96 xl:w-[22rem] md:w-[21rem]" />
           <div className="mt-4">
             <h2  className="text-xl sm:text-4xl font-normal text-red-500 font-sora ">Wamika </h2>
             <h2 className="text-xl sm:text-4xl font-normal text-red-500 font-sora md:pl-5">Dahiya</h2>
