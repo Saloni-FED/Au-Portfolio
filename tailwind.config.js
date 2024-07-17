@@ -22,7 +22,7 @@ module.exports = {
         "custom-light-gray": "#cedodc",
       },
       screens: {
-        "sc": "892px",
+        "sc": "964px",
       },
       fontFamily: {
         'song-myung': ['Song Myung', 'serif'],
