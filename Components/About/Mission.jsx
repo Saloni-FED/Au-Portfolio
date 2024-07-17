@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import OurVision from "./OurVision";
 const Mission = () => {
   const cards = [
     {
@@ -57,6 +58,10 @@ const Mission = () => {
             />
           ))}
         </div>
+      </div>
+
+      <div>
+       <OurVision/>
       </div>
     </div>
   );

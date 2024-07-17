@@ -3,6 +3,10 @@ import About from "@/Components/About/About";
 import Stats from "@/Components/About/Stats";
 import Founder from "@/Components/About/Founder";
 import Mission from "@/Components/About/Mission";
+import WhatWeDo from "@/Components/About/WhatWeDo";
+import OurCommitment from "@/Components/About/OurCommitment";
+import WhyChooseUs from "@/Components/About/WhyChooseUs";
+import ContactForm from "@/Components/About/ContactForm";
 // import FounderProfile from "@/Components/About/FounderProfile";
 const page = () => {
   return (
@@ -13,6 +17,10 @@ const page = () => {
         <Stats/>
         <Founder/>
         <Mission/>
+        <WhatWeDo/>
+        <OurCommitment/>
+        <WhyChooseUs/>
+        <ContactForm/>
       </div>
     </div>
   );
