@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&family=Sora:wght@100..800&family=Srisakdi:wght@400;700&family=Stalemate&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#000;
+}
