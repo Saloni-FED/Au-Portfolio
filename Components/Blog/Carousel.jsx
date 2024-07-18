@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
