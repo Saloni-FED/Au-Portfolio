@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import "tailwindcss/tailwind.css";
 
 const Carousel = () => {
@@ -49,26 +49,28 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full  flex justify-center items-center bg-pink-100 my-10 overflow-x-scroll">
+    <div className="relative w-full flex justify-center items-center bg-pink-100 my-10 overflow-x-hidden">
       <div className="w-full max-w-4xl">
-        <div className=" py-3 ">
+        <div className="py-3">
           <div
             className="flex transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            {slides.map((slide) => (
+            {slides.map((slide, index) => (
               <div
                 key={slide.id}
-                className="w-full flex-shrink-0 flex justify-center items-center"
+                className="w-full flex-shrink-0 flex justify-center items-center transition-shadow duration-500"
               >
                 <div
-                  className="bg-white rounded-3xl  overflow-x-hidden flex flex-col items-center shadow-3xl lg:w-[750px] lg:h-[300px] "
-                //   style={{ width: "700px", height: "300px" }}
+                  className={`bg-white rounded-3xl flex flex-col items-center ${
+                    index === currentIndex ? "h-[350px] shadow-2xl" : "h-[300px] shadow-md"
+                  }`}
+                  style={{ width: "95%", margin: "0 10px" }}
                 >
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="w-full h-full object-cover rounded-3xl "
+                    className="w-full h-full object-cover rounded-3xl"
                   />
                   {/* <div className="text-center mt-4 w-full">
                     <span className="bg-black text-white text-xs uppercase px-2 py-1 rounded-full">
@@ -82,16 +84,16 @@ const Carousel = () => {
             ))}
           </div>
         </div>
-        <div  className="flex justify-end gap-2 mt-10 pr-10">
+        <div className="flex justify-end gap-2 mt-10 pr-10">
           <button
             onClick={prevSlide}
-              className=" transform -translate-y-1/2  rounded-full px-3 py-2  shadow border border-black"
+            className="transform -translate-y-1/2 rounded-full px-3 py-2 shadow border border-black"
           >
             &larr;
           </button>
           <button
             onClick={nextSlide}
-              className=" transform -translate-y-1/2 border rounded-full px-3 py-2 shadow bg-black text-white"
+            className="transform -translate-y-1/2 border rounded-full px-3 py-2 shadow bg-black text-white"
           >
             &rarr;
           </button>
