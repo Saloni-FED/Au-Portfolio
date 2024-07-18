@@ -23,6 +23,8 @@ module.exports = {
         "custom-pink": "#f496ac",
         "custom-gray": "#a6a6a6",
         "custom-light-gray": "#cedodc",
+        "custom-cat" : "#EEEEE4",
+        "bo-color": "#D9D9D9"
       },
       screens: {
         "sc": "964px",

@@ -73,14 +73,14 @@ const Carousel = () => {
                     className="w-full h-full object-cover rounded-3xl"
                   />
                   <div className=" absolute bottom-2 md:px-7 w-full">
-                    <div className=" mt-4 w-full bg-white md:rounded-full md:pl-10  font-sora relative rounded px-3">
-                      <div className="absolute bg-white pt-3 w-40  -top-10 h-10 rounded-lg -left-2 pl-10 hidden md:block">
+                    <div className=" mt-4 w-full bg-white  md:pl-10  font-sora relative rounded px-3">
+                      <div className="absolute bg-white pt-2 w-40  -top-8 h-10 rounded -left-[0.22px] pl-9 hidden md:block">
                         <span className="bg-black text-white text-xs uppercase px-6 py-1 rounded-full -mt-10">
                           Latest
                         </span>
                       </div>
 
-                      <h2 className="text-lg font-semibold mt-4">
+                      <h2 className="text-lg font-semibold pt-3">
                         {slide.title}
                       </h2>
                       <p className="text-gray-600">{slide.description}</p>
