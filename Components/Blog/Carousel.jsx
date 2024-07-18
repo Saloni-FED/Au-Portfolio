@@ -49,9 +49,9 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full  flex justify-center items-center bg-pink-100 my-10">
+    <div className="relative w-full  flex justify-center items-center bg-pink-100 my-10 overflow-x-scroll">
       <div className="w-full max-w-4xl">
-        <div className="overflow-x-hidden py-3 ">
+        <div className=" py-3 ">
           <div
             className="flex transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -62,8 +62,8 @@ const Carousel = () => {
                 className="w-full flex-shrink-0 flex justify-center items-center"
               >
                 <div
-                  className="bg-white rounded-3xl  overflow-x-hidden flex flex-col items-center shadow-3xl"
-                  style={{ width: "600px", height: "300px" }}
+                  className="bg-white rounded-3xl  overflow-x-hidden flex flex-col items-center shadow-3xl lg:w-[750px] lg:h-[300px] "
+                //   style={{ width: "700px", height: "300px" }}
                 >
                   <img
                     src={slide.image}
