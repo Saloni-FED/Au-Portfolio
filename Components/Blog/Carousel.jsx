@@ -62,23 +62,31 @@ const Carousel = () => {
                 className="w-full flex-shrink-0 flex justify-center items-center transition-shadow duration-500"
               >
                 <div
-                  className={`bg-white rounded-3xl flex flex-col items-center ${
-                    index === currentIndex ? "h-[350px] shadow-2xl" : "h-[300px] shadow-md"
+                  className={`bg-white rounded-3xl flex flex-col items-center shadow-custom relative ${
+                    index === currentIndex ? "h-[400px] " : "h-[350px]"
                   }`}
-                  style={{ width: "95%", margin: "0 10px" }}
+                  style={{ width: "85%", margin: "0 10px" }}
                 >
                   <img
                     src={slide.image}
                     alt={slide.title}
                     className="w-full h-full object-cover rounded-3xl"
                   />
-                  {/* <div className="text-center mt-4 w-full">
-                    <span className="bg-black text-white text-xs uppercase px-2 py-1 rounded-full">
-                      Latest
-                    </span>
-                    <h2 className="text-lg font-semibold mt-2">{slide.title}</h2>
-                    <p className="text-gray-600">{slide.description}</p>
-                  </div> */}
+                  <div className=" absolute bottom-2 md:px-7 w-full">
+                    <div className=" mt-4 w-full bg-white md:rounded-full md:pl-10  font-sora relative rounded px-3">
+                      <div className="absolute bg-white pt-3 w-40  -top-10 h-10 rounded-lg -left-2 pl-10 hidden md:block">
+                        <span className="bg-black text-white text-xs uppercase px-6 py-1 rounded-full -mt-10">
+                          Latest
+                        </span>
+                      </div>
+
+                      <h2 className="text-lg font-semibold mt-4">
+                        {slide.title}
+                      </h2>
+                      <p className="text-gray-600">{slide.description}</p>
+                    </div>
+                  </div>
+        
                 </div>
               </div>
             ))}

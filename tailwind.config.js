@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '5.51px 11.02px 33.69px 0px rgba(0, 0, 0, 0.35)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
