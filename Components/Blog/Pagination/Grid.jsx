@@ -15,7 +15,7 @@ const Grid = ({ items }) => {
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-4xl mx-auto">
         {currentItems.map((item, index) => (
-          <Card key={index} title={item.title} description={item.description} time={item.time} />
+          <Card key={index} title={item.title} description={item.description} time={item.createdAt} img={item.image} />
         ))}
       </div>
       <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />

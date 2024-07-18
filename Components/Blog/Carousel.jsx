@@ -1,42 +1,23 @@
 "use client";
 import React, { useState, useEffect } from "react";
-// import "tailwindcss/tailwind.css";
+import { fetchLatestBlogs } from "../../firebase/firebaseFunction.js";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slides, setSlides] = useState([]);
 
-  const slides = [
-    {
-      id: 1,
-      image: "/images/img.png", // Replace with your image path
-      title: "How To Remove Tan",
-      description: "Effective Home Remedies For Glowing Skin",
-    },
-    {
-      id: 2,
-      image: "/images/img.png", // Replace with your image path
-      title: "Title 2",
-      description: "Description for the second slide",
-    },
-    {
-      id: 3,
-      image: "/images/img.png", // Replace with your image path
-      title: "Title 3",
-      description: "Description for the third slide",
-    },
-    {
-      id: 4,
-      image: "/images/img.png", // Replace with your image path
-      title: "Title 4",
-      description: "Description for the fourth slide",
-    },
-    {
-      id: 5,
-      image: "/images/img.png", // Replace with your image path
-      title: "Title 5",
-      description: "Description for the fifth slide",
-    },
-  ];
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await fetchLatestBlogs();
+        setSlides(data);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -68,13 +49,13 @@ const Carousel = () => {
                   style={{ width: "85%", margin: "0 10px" }}
                 >
                   <img
-                    src={slide.image}
+                    src={slide.image || "/images/default.png"} // Use a default image if none provided
                     alt={slide.title}
                     className="w-full h-full object-cover rounded-3xl"
                   />
-                  <div className=" absolute bottom-2 md:px-7 w-full">
-                    <div className=" mt-4 w-full bg-white  md:pl-10  font-sora relative rounded px-3">
-                      <div className="absolute bg-white pt-2 w-40  -top-8 h-10 rounded -left-[0.22px] pl-9 hidden md:block">
+                  <div className="absolute bottom-2 md:px-7 w-full">
+                    <div className="mt-4 w-full bg-white md:pl-10 font-sora relative rounded px-3">
+                      <div className="absolute bg-white pt-2 w-40 -top-8 h-10 rounded -left-[0.22px] pl-9 hidden md:block">
                         <span className="bg-black text-white text-xs uppercase px-6 py-1 rounded-full -mt-10">
                           Latest
                         </span>
@@ -86,7 +67,6 @@ const Carousel = () => {
                       <p className="text-gray-600">{slide.description}</p>
                     </div>
                   </div>
-        
                 </div>
               </div>
             ))}
