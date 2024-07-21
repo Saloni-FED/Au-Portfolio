@@ -13,10 +13,10 @@ const Navbar = () => {
           {/* Responsive navigation links */}
           <div className="hidden max-w-2xl sm:flex space-x-10 text-sm font-sora md:text-[16px] font-normal">
             <Link href="/about">About us</Link>
-            <Link href="#for-users">for User's</Link>
-            <Link href="#for-artists">for Artist's</Link>
-            <Link href="#knowledge-centre">Knowledge centre</Link>
-            <Link href="#contact-us">Contact us</Link>
+            <Link href="/for-users">for User's</Link>
+            <Link href="/for-artists">for Artist's</Link>
+            <Link href="/knowledge-center">Knowledge centre</Link>
+            <Link href="/contact">Contact us</Link>
           </div>
           {/* Responsive app download buttons */}
           <div className="flex flex-col gap-1">

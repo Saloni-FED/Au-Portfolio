@@ -1,6 +1,6 @@
 // firebaseUtils.js
 import { db } from './firebaseConfig';
-import { collection, query, orderBy, getDocs } from 'firebase/firestore';
+import { collection, query, orderBy, getDocs, where } from 'firebase/firestore';
 
 const fetchLatestBlogs = async () => {
   try {
@@ -21,4 +21,30 @@ const fetchLatestBlogs = async () => {
   }
 };
 
-export { fetchLatestBlogs };
+
+
+const fetchBlogBySlug = async (slug) => {
+  console.log(slug, "slug is here")
+  try {
+    const blogsRef = collection(db, 'blogs');
+    const q = query(blogsRef, where('slug', '==', slug)); // Assuming you have a 'slug' field in your blogs
+    const querySnapshot = await getDocs(q);
+
+    let blog = null;
+    querySnapshot.forEach((doc) => {
+      blog = { id: doc.id, ...doc.data() };
+    });
+
+    
+    if(blog){
+      console.log(blog, "blog comming from firebase, blog is present true")
+      return blog;
+    }
+
+    
+  } catch (error) {
+    console.error('Error fetching blog by slug:', error);
+    throw error;
+  }
+};
+export { fetchLatestBlogs, fetchBlogBySlug };

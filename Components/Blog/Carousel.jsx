@@ -54,9 +54,9 @@ const Carousel = () => {
                     className="w-full h-full object-cover rounded-3xl"
                   />
                   <div className="absolute bottom-2 md:px-7 w-full">
-                    <div className="mt-4 w-full bg-white md:pl-10 font-sora relative rounded px-3">
-                      <div className="absolute bg-white pt-2 w-40 -top-8 h-10 rounded -left-[0.22px] pl-9 hidden md:block">
-                        <span className="bg-black text-white text-xs uppercase px-6 py-1 rounded-full -mt-10">
+                    <div className="mt-4 w-full bg-white md:pl-10 font-sora relative rounded-lg px-3" style={{borderTopLeftRadius:"10px"}}>
+                      <div className="absolute bg-white pt-2 w-40 -top-8 h-10  -left-[0.22px] pl-9 hidden md:block" style={{borderTopLeftRadius:"15px", borderTopRightRadius:"15px"}}>
+                        <span className="bg-black text-white text-xs uppercase px-6 py-1 rounded-full -mt-10" >
                           Latest
                         </span>
                       </div>
