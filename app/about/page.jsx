@@ -20,7 +20,7 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="md:pt-32 py-28 text-white mx-auto container bg-black">
+    <div className="md:pt-30 py-28 text-white mx-auto container bg-black">
       <img
         src="/images/About(BLUR).png"
         className=" mx-auto w-64 sc:block hidden"
